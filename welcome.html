@@ -5,7 +5,7 @@
 
 
 
-</head>å
+</head>
 <body  >
 <div id="app"></div>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.1.0/umd/react.development.js"></script>
@@ -17,18 +17,21 @@
      		render(){
      			return (
      				<div>
-     					<h1>Hello {this.props.name} </h1>
+     					<h1> Hello {this.props.name} </h1>
+     					<h2> Welcome to {this.props.store} </h2>
      				</div>
      			);
      		}
      	
-     	 
+     	
      	
      	}
      	ReactDOM.render(
-     	 <Greeting name="Bloc Students"/>, document.getElementById('app')
+     	 <Greeting 
+     	 name="Customers"
+     	 store="Bloc Foods"
+     	 />, document.getElementById('app')
      	);
-     
      
      
      
